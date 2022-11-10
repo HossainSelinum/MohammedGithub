@@ -21,7 +21,10 @@ public class register_page extends Config {
     @FindBy(how= How.XPATH, using = "//span[@class='inner-focus hide-on-mobile truncate']")
     public WebElement accountLocator;
 
-    @FindBy (how = How.ID,using = "pf-dropdown-register")
+//   @FindBy (how = How.ID,using = "pf-dropdown-register")
+//    public WebElement registerLocator;
+
+    @FindBy (how = How.LINK_TEXT,using = "Register")
     public WebElement registerLocator;
 
     @FindBy (how = How.XPATH,using = "//input[@name='firstName']")
